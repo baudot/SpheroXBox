@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="SpheroFlick.SpheroCommander">
+    <Position X="1.5" Y="0.75" Width="3.75" />
+    <Members>
+      <Field Name="spheroBackLED" Hidden="true" />
+      <Field Name="spheroColor" Hidden="true" />
+      <Field Name="spheroComm" Hidden="true" />
+      <Field Name="spheroConnectionState" Hidden="true" />
+      <Field Name="spheroHeading" Hidden="true" />
+      <Field Name="spheroSpeed" Hidden="true" />
+      <Field Name="spheroStabilizationState" Hidden="true" />
+      <Field Name="spheroTimeout" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIAQAIAAAQEgAQAAgCBAgAAAAQAAACIAIAAAiBAEAAA=</HashCode>
+      <FileName>SpheroCommander.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

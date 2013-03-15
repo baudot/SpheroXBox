@@ -1,0 +1,38 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="SpheroFlick.MainWindow"
+        Title="XBoxDrive" WindowState="Maximized" ManipulationStarting="Window_ManipulationStarting_1" ManipulationDelta="Window_ManipulationDelta_1" ManipulationInertiaStarting="Window_ManipulationInertiaStarting_1">
+    <Grid>
+
+
+        <ComboBox x:Name="PortNames" HorizontalAlignment="Left" Margin="101,438,0,0" VerticalAlignment="Top" Width="120" Height="22" d:LayoutOverrides="Margin"/>
+        <Label Content="Com Ports" HorizontalAlignment="Left" Margin="14,434,0,0" VerticalAlignment="Top" Width="104" Height="26" d:LayoutOverrides="Margin"/>
+        <ComboBox x:Name="SpheroNames" HorizontalAlignment="Left" Margin="101,408,0,0" VerticalAlignment="Top" Width="120" Height="22" d:LayoutOverrides="Margin"/>
+        <Label Content="Spheros" HorizontalAlignment="Left" Margin="14,408,0,0" VerticalAlignment="Top" Height="26" Width="53" d:LayoutOverrides="Margin"/>
+        <Button Content="LINK!" HorizontalAlignment="Left" Margin="101,465,0,0" VerticalAlignment="Top" Width="75" Click="ConnectSpheroToPort" Height="22" d:LayoutOverrides="Margin"/>
+
+        <Label Content="Connected?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,16,0,0"/>
+        <Label Content="Connected?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="567,16,0,0"/>
+
+        <Label Content="Sphero One: " HorizontalAlignment="Left" Margin="14,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Unknown" x:Name="SpheroOneConnectionStatusLabel" HorizontalAlignment="Left" Margin="101,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sphero Two: " HorizontalAlignment="Left" Margin="14,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Unknown" x:Name="SpheroTwoConnectionStatusLabel" HorizontalAlignment="Left" Margin="101,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sphero Three: " HorizontalAlignment="Left" Margin="14,107,0,0" VerticalAlignment="Top"/>
+        <Label Content="Unknown" x:Name="SpheroThreeConnectionStatusLabel" HorizontalAlignment="Left" Margin="101,107,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sphero Four: " HorizontalAlignment="Left" Margin="14,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="Unknown" x:Name="SpheroFourConnectionStatusLabel" HorizontalAlignment="Left" Margin="101,137,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Controller One: " HorizontalAlignment="Left" Margin="460,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Unknown" x:Name="ControllerOneConnectionStatusLabel" HorizontalAlignment="Left" Margin="567,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Controller Two: " HorizontalAlignment="Left" Margin="460,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Unknown" x:Name="ControllerTwoConnectionStatusLabel" HorizontalAlignment="Left" Margin="567,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Controller Three: " HorizontalAlignment="Left" Margin="460,107,0,0" VerticalAlignment="Top"/>
+        <Label Content="Unknown" x:Name="ControllerThreeConnectionStatusLabel" HorizontalAlignment="Left" Margin="567,107,0,0" VerticalAlignment="Top"/>
+        <Label Content="Controller Four: " HorizontalAlignment="Left" Margin="460,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="Unknown" x:Name="ControllerFourConnectionStatusLabel" HorizontalAlignment="Left" Margin="567,137,0,0" VerticalAlignment="Top"/>
+        <Button Content="Start Playing Tag" HorizontalAlignment="Left" Margin="460,412,0,0" VerticalAlignment="Top" Width="130" Click="StartPlaying" />
+        <Button Content="Stop Playing Tag" HorizontalAlignment="Left" Margin="460,439,0,0" VerticalAlignment="Top" Width="130" Click="StopPlaying" />
+
+    </Grid>
+</Window>
